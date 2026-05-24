@@ -1,0 +1,1 @@
+mysqldump --databases hospital_data --single-transaction --compression-algorithms=zlib --order-by-primary --set-gtid-purged=OFF --routines=0 --triggers=0 --events=0 -u root -p > C:\Users\User\OneDrive\Desktop\Hospital Excel Datasets\Database
