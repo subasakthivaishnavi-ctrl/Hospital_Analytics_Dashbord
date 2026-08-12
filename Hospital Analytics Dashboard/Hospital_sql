@@ -1,1 +1,21 @@
-
+SELECT `appointment`.`appointment_id`,
+    `appointment`.`patient_id`,
+    `appointment`.`doctor_id`,
+    `appointment`.`appointment_date`,
+    `appointment`.`appointment_time`,
+    `appointment`.`status`,
+    `appointment`.`reason`,
+    `appointment`.`notes`,
+    `appointment`.`suggest`,
+    `appointment`.`fees`,
+    `appointment`.`payment_method`,
+    `appointment`.`discount`,
+    `appointment`.`diagnosis`
+FROM `hospital_data`.`appointment`;
+SELECT `beds`.`bed_id`,
+    `beds`.`room_id`,
+    `beds`.`status`,
+    `beds`.`patient_id`,
+    `beds`.`occupied_from`,
+    `beds`.`occupied_till`
+FROM `hospital_data`.`beds`;
